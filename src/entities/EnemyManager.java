@@ -66,9 +66,9 @@ public class EnemyManager {
 			if (d.isActive()) {
 				g.drawImage(deathArr[d.getState()][d.getAniIndex()], (int) d.getHitbox().x - xLvlOffset - DEATH_DRAWOFFSET_X + d.flipX(),
 						(int) d.getHitbox().y - DEATH_DRAWOFFSET_Y + (int) d.getPushDrawOffset(), DEATH_WIDTH * d.flipW(), DEATH_HEIGHT, null);
-//				d.drawHitbox(g, xLvlOffset);
-////				System.out.println(xLvlOffset);
-//				d.drawAttackBox(g, xLvlOffset);
+				// d.drawHitbox(g, xLvlOffset);
+				// System.out.println(xLvlOffset);
+				// d.drawAttackBox(g, xLvlOffset);
 			}
 	}
 	
@@ -77,8 +77,8 @@ public class EnemyManager {
 			if (go.isActive()) {
 				g.drawImage(goblinArr[go.getState()][go.getAniIndex()], (int) go.getHitbox().x - xLvlOffset - GOBLIN_DRAWOFFSET_X + go.flipX(),
 						(int) go.getHitbox().y - GOBLIN_DRAWOFFSET_Y + (int) go.getPushDrawOffset(), GOBLIN_WIDTH * go.flipW(), GOBLIN_HEIGHT, null);
-//				go.drawHitbox(g, xLvlOffset);
-//				go.drawAttackBox(g, xLvlOffset);
+				go.drawHitbox(g, xLvlOffset);
+				go.drawAttackBox(g, xLvlOffset);
 			}
 	}
 

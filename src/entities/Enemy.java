@@ -42,8 +42,8 @@ public abstract class Enemy extends Entity {
 			attackBox.x = hitbox.x + hitbox.width;
 		else
 			attackBox.x = hitbox.x - attackBoxOffsetX;
-//		if (enemyType == DEATH && walkDir == LEFT)
-//			attackBox.x -= 2 * attackBoxOffsetX;
+		// if (enemyType == DEATH && walkDir == LEFT)
+		// 	attackBox.x -= 2 * attackBoxOffsetX;
 		attackBox.y = hitbox.y;
 		if (enemyType == DEATH)
 			attackBox.y = hitbox.y - 100;
